@@ -261,6 +261,11 @@ h4 {
 
 }
 
+/* ------ Banner styling ------ */
+.gif-banner {
+    height :3000px;
+    width: 100%;
+}
 
 /* ------ Footer styling ------ */
 .footer {
