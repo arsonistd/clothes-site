@@ -8,13 +8,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body>
     <div class="header">
 
         <div class="broadcast">
             <p>OPENING SALE! 30% OFF ALL ITEMS!</p>
+            <i class="close-icon material-symbols-sharp"  onclick="closeBrodcast()">close</i>
         </div>
 
         <div class="navbar" id="navbar">
@@ -29,8 +30,9 @@
             <div class="center-icon">
                 <img src="images/logo.png" width="125px">
             </div>
-            <i class="menu-icon material-icons" onclick="menutoggle()">menu</i>
-            <i class="cart-icon material-icons">shopping_cart</i>
+            <i class="menu-icon material-symbols-sharp" onclick="menutoggle()">menu</i>
+            <i class="search-icon material-symbols-sharp">search</i>
+            <i class="cart-icon material-symbols-sharp">shopping_cart</i>
         </div>
 
         <div class="container">
@@ -65,28 +67,31 @@
         <div class="container">
             <div class="row">
                 <div class="footer-col-1">
-                    <h3>Follow us on Instagram</h3>
-                    <p>@insert instagram here</p>
+                    <h3>Sign up!</h3>
+                    <p>Subscribe to our E-mails to become notified and recieve special offers! </p>
+                    <div class="email-box">
+                        <i class="mail-icon material-symbols-sharp">mail</i>
+                        <input type="text" value="Enter your email address">
+                    </div>
                 </div>
                 <div class="footer-col-2">
-                    <img src="images/footer-logo" alt="">
-                    <p>insert phrase here</p>
+                    <img src="images/footer-logo.png" alt="">
                 </div>
                 <div class="footer-col-3">
                     <h3>Useful Links</h3>
                     <ul>
-                        <li>Coupons</li>
-                        <li>Blog Post</li>
+                        <li>Home</li>
+                        <li>Products</li>
+                        <li>About</li>
                         <li>Return Policy</li>
-                        <li>Join Affiliate</li>
                     </ul>
                 </div>
                 <div class="footer-col-4">
                     <h3>Follow us</h3>
                     <ul>
-                        <li>Instagram</li>
-                        <li>Discord</li>
-                        <li>Youtube</li>
+                        <li><img src="images/discord-logo.svg" alt=""></li>
+                        <li><img src="images/instagram-logo.svg" alt=""></li>
+                        <li><img src="images/twitter-logo.svg" alt=""></li>
                     </ul>
                 </div>
             </div>
@@ -107,6 +112,12 @@
                 {
                     MenuItems.style.maxHeight = "0px";
                 }
+        }
+
+        function closeBrodcast(){
+            {
+                document.getElementsByClassName("broadcast").style.display = flexbox;
+            }
         }
 
     </script>
